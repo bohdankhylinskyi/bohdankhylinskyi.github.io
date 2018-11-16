@@ -1,22 +1,22 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Блог
+description:      Блог Сергея Хацёла
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
-# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
-# When testing locally leave blank or use http://localhost:4000
+
+# Your site's domain goes here (eg: https://mmistakes.github.io, etc) OR When testing locally leave blank
 url:
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  name:           Sergey Khatsiola
+  avatar:         avatar.png
+  bio:            "Кратко обо мне ..."
+  email:          2hotab2@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        2hotab2
+  facebook:       sergej.ha1
+  github:         Sergey-sirius
   stackexchange:  
   linkedin:       
   instagram:      
@@ -25,17 +25,17 @@ owner:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
-# Background image to be tiled on all pages
-background: 
+# Background image to be tiled on all pages matrix.jpg
+background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Kiev
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown

@@ -4,8 +4,8 @@ title: Theme Setup
 description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
 image:
   feature: abstract-11.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  #credit: dargadgetz
+  #creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 share: true
 modified: 2016-06-01T15:14:43-04:00
 ---
@@ -16,16 +16,19 @@ HPSTR now requires [Jekyll](http://jekyllrb.com/) 3.0. Make sure to run `bundle 
 
 ## Basic Setup for a new Jekyll site
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
+1. [Install Bundler](http://bundler.io) `gem install bundler` and 
+    then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
 2. Fork the [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
 3. Clone the repo you just forked and rename it.
 4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
+5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, 
+    assigning categories and tags, and other YAML data.
 6. Read the documentation below for further customization pointers and documentation.
 
 <div markdown="0"><a href="https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. 
+There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
 {: .notice}
 
 ---
@@ -40,7 +43,8 @@ HPSTR now requires [Jekyll](http://jekyllrb.com/) 3.0. Make sure to run `bundle 
 
 ## Running Jekyll
 
-The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel free to go cowboy with a `jekyll build` or `jekyll serve`.
+The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel 
+free to go cowboy with a `jekyll build` or `jekyll serve`.
 
 > In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
 >
