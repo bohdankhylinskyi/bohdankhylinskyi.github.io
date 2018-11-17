@@ -1,34 +1,31 @@
 ---
 layout: page
-title: Theme Setup
-description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
+title: Настройка темы
+description: "Инструкция о том как проинсталировать и настроить совеременнуб Jekyll тему HPSTR."
 image:
   feature: abstract-11.jpg
   #credit: dargadgetz
   #creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 share: true
-modified: 2016-06-01T15:14:43-04:00
+modified: 2018-11-17T15:14:43-04:00
 ---
+Общие замечания и предложения по настройке HPSTR.
+HPSTR теперь требует Jekyll 3.0. Обязательно запустите `bundle update`,чтобы обновить все зависимости gem.
 
-General notes and suggestions for customizing **HPSTR**.
+## Базовая установка для нового сайта Jekyll
 
-HPSTR now requires [Jekyll](http://jekyllrb.com/) 3.0. Make sure to run `bundle update` if you aren't on the latest version to update all gem dependencies.
-
-## Basic Setup for a new Jekyll site
-
-1. [Install Bundler](http://bundler.io) `gem install bundler` and 
-    then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, 
-    assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
+1. [Инсталируйте Bundler](http://bundler.io) `gem install bundler`, а также 
+    установите [Jekyll](http://jekyllrb.com) и все зависимости `bundle install`.
+2. Сделайте fork репозитория [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
+3. Клонируйте и переименуйте репозиторий.
+4. Отредактируйте файл `_config.yml` под Ваши персональные данные.
+5. Просмотрите примеры сообщений в `_posts`, чтобы увидеть примеры работы для вытягивания больших образов, назначения категорий и тегов и других данных YAML.
+6. Прочтите приведенную ниже документацию для дальнейших настройки.
 
 <div markdown="0"><a href="https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. 
-There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+**Pro-tip:** Удалите `gh-pages` ветку после клонирования репозитория и создайте `master` ветку.
+В gh-страницах, используемой для демонстрационного сайта темы, есть куча мусора, который я предполагаю, что вы не хотите видеть на своем сайте.
 {: .notice}
 
 ---
