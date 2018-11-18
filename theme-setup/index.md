@@ -31,22 +31,21 @@ HPSTR теперь работает под Jekyll 3.0. Обязательно з
 
 ---
 
-## Setup for an Existing Jekyll site
+## Настройка существующего сайта Jekyll
 
-1. Clone the following folders: `_includes`, `_layouts`, `_sass`, `assets`, and `images`.
-2. Clone the following folders/files and personalize content as need: `about/`, `posts/`, `tags/`, `feed.xml` and `index.html`.
-3. Edit `_config.yml` to personalize your site.
+1. Клонируем папки: `_includes`, `_layouts`, `_sass`, `assets`, and `images`.
+2. Клонировать следующие папки / файлы и персонализировать контент по мере необходимости.: `about/`, `posts/`, `tags/`, `feed.xml` and `index.html`.
+3. Редактируем `_config.yml` чтобы персонализировать ваш сайт.
 
 ---
 
-## Running Jekyll
+## Запуск Jekyll
 
-The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel 
-free to go cowboy with a `jekyll build` or `jekyll serve`.
+Предпочтительным методом запуска Jekyll является `bundle exec`, но если вы готовы решать проблемы, связанные с драгоценными камнями, не стесняйтесь `jekyll build` or `jekyll serve`.
 
-> In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
+> В некоторых случаях запуск исполняемых файлов без bundle exec работает, если не будет конфликтовать с вашим bundle.
 >
->However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.
+>Однако это ненадежно и является источником значительной боли. Даже если он выглядит так, как будто он работает, он может не работать в будущем или на другой машине.
 
 ```bash
 bundle exec jekyll build
@@ -56,70 +55,70 @@ bundle exec jekyll serve
 
 ---
 
-## Folder Structure
+## Структура папок
 
 ```bash
 hpstr-jekyll-theme/
 ├── _includes
-|    ├── browser-upgrade.html       # prompt to upgrade browser on < IE8
-|    ├── footer.html                # site footer
-|    ├── head.html                  # site head
-|    ├── navigation.html            # site navigation
-|    └── scripts.html               # jQuery, plugins, GA, etc
+|    ├── browser-upgrade.html       # запрос на обновление браузера < IE8
+|    ├── footer.html                # Нижний колонтитул сайта
+|    ├── head.html                  # заголовок сайта
+|    ├── navigation.html            # Навигация по сайту
+|    └── scripts.html               # jQuery, плагины, Google Analitics, etc
 ├── _layouts
-|    ├── page.html                  # page layout
-|    ├── page.html                  # post-index layout used on home page
-|    └── post.html                  # post layout
+|    ├── page.html                  # макет страницы
+|    ├── page.html                  # пост-индексный макет, используемый на домашней странице
+|    └── post.html                  # макет постов
 ├── _posts
 ├── _sass                           # Sass partials
 ├── assets
-|    ├── css                        # compiled stylesheets
+|    ├── css                        # скомпилированные таблицы стилей
 |    ├── js
-|    |   ├── _main.js               # plugin options
-|    |   ├── scripts.min.js         # concatenated and minifed site scripts
+|    |   ├── _main.js               # плагин опции
+|    |   ├── scripts.min.js         # объединить и минимизировать сценарии сайта
 |    |   ├── plugins                # plugin scripts
 |    └── └── vendor                 # jQuery and Modernizr scripts
-├── images                          # images for posts and pages
-├── _config.yml                     # Jekyll options
-├── about/                          # about page
-├── posts/                          # all posts
-├── tags/                           # all posts grouped by tag
-└── index.html                      # home page with pagination
+├── images                          # изображения для сообщений и страниц
+├── _config.yml                     # Jekyll опции
+├── about/                          # about страница
+├── posts/                          # все посты
+├── tags/                           # все посты групированные по тегам
+└── index.html                      # главная страница с пагинацией
 ```
 
 ---
 
-## Customization
+## Настройка
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to add the `title`, `description`, and `url` for your site. Links are absolute and prefixed with `{{ "{{ site.url " }}}}` in the various `_includes` and `_layouts`, so remember to properly set `url`[^1] to `http://localhost:4000` when developing locally.
+Большинство найденных здесь переменных используются в файлах .html, найденных в `_includes` если вам нужно добавить или удалить что-либо. Хорошим местом для начала было бы добавить `title`, `description`, and `url` для вашего сайта. Ссылки являются абсолютными и имеют префикс `{{ "{{ site.url " }}}}` в различных `_includes` и `_layouts`, поэтому не забудьте правильно установить `url`[^1] to `http://localhost:4000` при локальной разработке.
 
-### Disqus Comments
+### Комментарии Disqus
 
-Create a [Disqus](http://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. By default comments appear on all post and pages if you assigned a shortname. To disable commenting on a post or page, add the following to its YAML Front Matter:
+Создайте [Disqus](http://disqus.com) учетку и измените `disqus_shortname` в `_config.yml` к короткому имени Disqus, который вы только что установили. По умолчанию комментарии появляются на всех страницах и страницах, если вы назначили короткое имя. Чтобы отключить комментирование сообщения или страницы, добавьте следующее в его функцию YAML Front Matter:
 
 ```yaml
 comments: false
 ```
 
-### Social Share Links
+### Ссылки на социальные сети
 
-To disable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:
+Чтобы отключить ссылки на Facebook, Twitter и Google+ на странице или странице, добавьте следующее к своему первому вопросу:
 
 ```yaml
 share: false
 ```
 
-### Owner/Author Information
+### Владелец / Информация об авторе
 
-Change your name, and avatar photo (200x200 pixels or larger), email, and social networking URLs. If you want to link to an external image on Gravatar or something similar you'll need to edit the path in `navigation.html` since it assumes it is located in `/images`.
+Измените имя и фото на аватарку (200x200 pixels или больше), email, и ссылки на соцсети. Если вы хотите ссылаться на внешний образ на Gravatar или что-то подобное, вам нужно будет отредактировать путь в `navigation.html` так как предполагается, что он расположен в `/images`.
 
 ### Google Analytics and Webmaster Tools
 
-Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
+Ваш идентификатор Google Analytics отправляется сюда вместе с метатегами для проверки в [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) и [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) верификация сайта.
 
-### Navigation Links
+### Ссылки навигации
 
-To add additional links in the drop down menu edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
+Чтобы добавить дополнительные ссылки в выпадающем меню, отредактируйте `_data/navigation.yml`. Используйте следующий формат, чтобы установить URL-адрес и заголовок для как можно большего количества ссылок. *Внешние ссылки откроются в новом окне.*
 
 ```yaml
 - title: Portfolio
@@ -131,25 +130,25 @@ To add additional links in the drop down menu edit `_data/navigation.yml`. Use t
 
 ---
 
-## Adding New Content
+## Добавление нового контента
 
-Posts are stored in the `_posts` directory and named according to the `YEAR-MONTH-DAY-title.MARKUP` format as per [the usual](https://jekyllrb.com/docs/posts/).
+Ваши посты хранятся в `_posts` папке и названный в соответствии с `YEAR-MONTH-DAY-title.MARKUP` [обычным форматом](https://jekyllrb.com/docs/posts/).
 
-To streamline the creation of posts and pages, [Jekyll::Compose](https://github.com/jekyll/jekyll-compose) and [Octopress](https://github.com/octopress/octopress) are great plugins you can install to automate this process.
+Чтобы упростить создание сообщений и страниц, [Jekyll::Compose](https://github.com/jekyll/jekyll-compose) и [Octopress](https://github.com/octopress/octopress) это отличные плагины, которые вы можете установить для автоматизации этого процесса.
 
 ---
 
 ### Jekyll _includes
 
-For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the copyright stuff in `footer.html` to your liking.
+По большей части вы можете оставить их как есть, так как данные автора / владельца вытягиваются из `_config.yml`. Тем не менее, вы, вероятно, захотите настроить `footer.html` на ваш вкус.
 
-### Reading Time
+### Время чтения
 
-On by default. To turn off remove `reading_time` from `_config.yml`. Default words per minute is set at 200 and can changed by updating `words_per_minute` in `_config.yml`.
+По умолчанию,но  можно отключить `reading_time` в файле `_config.yml`. Слова по умолчанию в минуту устанавливаются в 200 и могут быть изменены путем обновления `words_per_minute` in `_config.yml`.
 
 ### Feature Images
 
-A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at the [Jekyll Picture Tag](https://github.com/scottjehl/picturefill)[^2] plugin.
+Хорошее эмпирическое правило состоит в том, чтобы сохранить изображения объектов красивыми и широкими, чтобы вы не слишком сильно удаляли текст тела. Изображение, обрезанное вокруг 1024 x 256 пикселей, будет поддерживать размер файла с приемлемым разрешением для большинства устройств. Если вы хотите быстро реагировать на эти изображения, я бы предложил посмотреть плагин [Jekyll Picture Tag](https://github.com/scottjehl/picturefill)[^2] плагин.
 
 The two layouts make the assumption that the feature images live in the *images* folder. To add a feature image to a post or page just include the filename in the front matter like so.
 
