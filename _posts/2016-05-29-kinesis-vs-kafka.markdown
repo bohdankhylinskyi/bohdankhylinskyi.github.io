@@ -41,33 +41,8 @@ One reason Kinesis has higher latency is because all communication is done throu
 
 Kinesis bandwidth and rate limiting is determined by the number of shards in your Kinesis stream. As you increase your shards, you also increase the cost of your stream: 
 
-{% mermaid %}
-        graph LR
-        A[Client A] -.HTTP.-> E[Shard 1]  
-        A[Client A] -.HTTP.-> F[Shard 2] 
-        B[Client B] -.HTTP.-> E[Shard 1]
-        C[Client C] -.HTTP.-> I[Shard 1]
-        subgraph Kinesis Stream A
-        E[Shard 1]
-        F[Shard 2]
-        end   
-        subgraph Kinesis Stream B
-        I[Shard 1]
-        end
-{% endmermaid %}
 
 Kafka supports a low level TCP client for high volume and low latency requests. There is a REST library that wraps the low level client, however, it's managed and deployed separately:  
-
-{% mermaid %}
-        graph LR
-        B[Client B] -.TCP.-> C[Apache Kafka]
-        A[Client A] -.HTTP + Auth.-> D[HTTP Proxy]  
-        D[HTTP Proxy] -. flow control .-> C[Apache Kafka]
-        subgraph Kafka Pipeline
-        C[Apache Kafka]
-        D[HTTP Proxy]
-        end        
-{% endmermaid %}
 
 Kafka also has tooling to support authorization and security, see [Apache Kafka Security 101](http://www.confluent.io/blog/apache-kafka-security-authorization-authentication-encryption). As you can see, it's non-trivial to setup and will likely require an additional service for managing certificates.
 

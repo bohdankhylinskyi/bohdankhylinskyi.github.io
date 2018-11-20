@@ -17,20 +17,6 @@ A data pipeline is method for shipping data efficiently to various services thro
 The idea is that you have a set of producer and consumer applications, where the producer will publish data to your pipeline and the consumer will subscribe from your pipeline. That means that you can integrate your pipeline with multiple systems by creating multiple consumer applications. 
 
 
-{% mermaid %}
-        graph LR
- 
-        A(Mobile) -.publish.-> E((Pipeline)) 
-        B(Platform) -.publish.-> E((Pipeline))
-        C(CRM) -.publish.-> E((Pipeline)) 
-        D(Salesforce) -.publish.-> E((Pipeline))
-        E -.subscribe.-> G(Data Warehouse)
-        E -.subscribe.-> I(Real-time Dashboards)
-        E -.subscribe.-> J(Recommender Systems)
-        E -.subscribe.-> K(Third-party Integration)
-{% endmermaid %}
-
-
 It also support a _time to live_ (TTL) parameter which allows you to persist data in the pipeline for days to years. As a result you can replay messages as needed. This is particularly useful if your consumer application logic changes. 
 
 The pipeline is essentially a high-throughput distributed messaging system such as [Apache Kafka](http://kafka.apache.org/) or  [Amazon Kinesis](https://aws.amazon.com/kinesis/). They are built to support a huge number of incoming and outgoing messages.
