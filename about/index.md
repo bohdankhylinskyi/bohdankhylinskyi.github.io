@@ -1,53 +1,32 @@
 ---
 layout: page
-title: Professional for Hire
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+title: Информация о Jekyll Theme
 image:
-  feature: sample-image-7.jpg
+  feature: abstract-5.jpg
+  #credit: dargadgetz
+  #creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+comments: false
+modified: 2016-02-01
 ---
 
-I love building data products that scale. That means implementing simple solutions with minimal maintenance through automation and eloquent designs.
+They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
 
-## Technical expertise
+If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
 
-My software experience spans the full stack; from system level deployment to application implementation. In particular, I spent quite a bit of time working with these technologies.
+## HPSTR Features:
 
-* [Apache Spark](http://spark.apache.org/) ([Spark Streaming](http://spark.apache.org/streaming/), [Spark SQL](http://spark.apache.org/sql/))
-* [Ansible](http://www.ansible.com/home)
-* [Amazon Web Services](http://aws.amazon.com/) ([Kinesis](http://aws.amazon.com/kinesis/), [Redshift](http://aws.amazon.com/redshift/), [S3](http://aws.amazon.com/s3/), [EC2](http://aws.amazon.com/ec2/), [Route53](http://aws.amazon.com/route53/), [VPC](http://aws.amazon.com/vpc/))
-* [Cassandra](http://cassandra.apache.org/)
-* [MongoDB](https://www.mongodb.org/)
-* [Python](https://www.python.org/) ([Flask](http://flask.pocoo.org/), [Gunicorn](http://gunicorn.org/))
-* [Scala](http://www.scala-lang.org/) ([Play](https://www.playframework.com/), [sbt](http://www.scala-sbt.org/))
+* Compatible with Jekyll 3 and GitHub Pages.
+* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
+* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+* Sweet animated menu.
+* Background image support.
+* Support for large images to call out your favorite posts.
+* Optional [Disqus](http://disqus.com) comments.
+* Simple and clear permalink structure[^1].
+* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
+* [Custom 404 page]({{ site.url }}/404.html) to get you started.
+* [Syntax highlighting]({{ site.url }}/code-highlighting-post/) stylesheets to make your code examples look snazzy.
 
-## Professional projects
+<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
 
-A few projects that I designed, implemented and delivered to a production environment.
-
-### Data pipeline and analytics framework
-
-Implemented a high-throughput data pipeline that enabled massive amounts of data to be published to _AWS Kinesis_ and consumed with _Apache Spark_. The infrastructure enabled in-flight computation as well as data integration with a variety of datastores.
-
-* Data pushed to _S3_, _AWS Redshift_ and _MongoDB_ within 1 minute.
-* Supports real-time machine learning and aggregation.
-
-### Real-time dashboards
-
-Built a highly scalable analytics reporting system as part of the core product of our software as a service (SaaS) platform. The system was designed using a services oriented architecture (SOA) model to minimize coupling. It also supported horizontal scaling by distributing writes and reads across nodes. Over a million data points can be processed within minutes and rendered within seconds to the end user.
-
-* Dashboard metrics are updated within a minute.
-* Supports up to ~500 million events per day.
-
-### Cloud infrastructure and automation
-
-Automated the deployment and buildup of an AWS cloud infrastructure that auto-scales with traffic demand. The infrastructure was automated using Ansible and enabled the deployment of multi-instance clusters with varying configuration and topology.
-
-* Multi-instance cluster collapsed into a single-instance.
-* Tear-down or build-up an environment within 5 minutes.
-* Decouple subsystems with independent deployment trains.
-
-### Decoupled platform architecture
-
-Architected as well as implemented a new configuration management system for the core QP platform at [QuickMobile](http://quickmobile.com). The design decoupled the system services from the application to enable greater flexibility and reduced down-down during deployments. The configuration mechanism was implemented using Ansible in idempotent style.
+[^1]: Example: *domain.com/category-name/post-title*

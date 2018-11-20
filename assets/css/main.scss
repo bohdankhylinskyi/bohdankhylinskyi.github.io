@@ -4,7 +4,7 @@ sitemap: false
 
 /*
  *
- *  Minimal Mistakes
+ *  HPSTR
  *
  *  Designer: Michael Rose
  *  Twitter: http://twitter.com/mmistakes
@@ -13,15 +13,16 @@ sitemap: false
 
 // Partials
 @import "variables";
-@import "grid";
 @import "mixins";
-@import "normalize";
-@import "site";
-@import "typography";
-@import "pygments";
-@import "coderay";
-@import "elements";
-@import "forms";
-@import "page";
+@import "reset";
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
+@import "site";
+@import "typography";
+@import "syntax";
+// @import "coderay";
+@import "grid";
+@import "elements";
+@import "animations";
+@import "dl-menu";
+@import "page";

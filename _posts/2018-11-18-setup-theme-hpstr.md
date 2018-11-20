@@ -1,0 +1,232 @@
+---
+layout: post
+title: Настройка темы HPSTR для SSG Jekyll
+description: "Инструкция о том как проинсталировать и настроить совеременнуб Jekyll тему HPSTR."
+image:
+  feature: abstract-11.jpg
+  #credit: dargadgetz
+  #creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+share: true
+modified: 2018-11-18T15:14:43-04:00
+tags: [hpstr setup]
+---
+Общие замечания и предложения по настройке HPSTR.
+
+HPSTR теперь работает под Jekyll 3.0. Обязательно запустите `bundle update`, чтобы обновить все зависимости gem.
+
+## Базовая установка для нового сайта Jekyll
+
+1. [Инсталируйте Bundler](http://bundler.io) `gem install bundler`, а также 
+    установите [Jekyll](http://jekyllrb.com) и все зависимости `bundle install`.
+2. Сделайте fork репозитория [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
+3. Клонируйте и переименуйте репозиторий.
+4. Отредактируйте файл `_config.yml` под Ваши персональные данные.
+5. Просмотрите примеры сообщений в `_posts`, чтобы увидеть примеры работы для вытягивания больших образов, назначения категорий и тегов и других данных YAML.
+6. Прочтите приведенную ниже документацию для дальнейших настройки.
+
+<div markdown="0"><a href="https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
+
+**Pro-tip:** Удалите `gh-pages` ветку после клонирования репозитория и создайте `master` ветку.
+В gh-страницах, используемой для демонстрационного сайта темы, есть куча мусора, который я предполагаю, что вы не хотите видеть на своем сайте.
+{: .notice}
+
+---
+
+## Настройка существующего сайта Jekyll
+
+1. Клонируем папки: `_includes`, `_layouts`, `_sass`, `assets`, and `images`.
+2. Клонировать следующие папки / файлы и персонализировать контент по мере необходимости.: `about/`, `posts/`, `tags/`, `feed.xml` and `index.html`.
+3. Редактируем `_config.yml` чтобы персонализировать ваш сайт.
+
+---
+
+## Запуск Jekyll
+
+Предпочтительным методом запуска Jekyll является `bundle exec`, но если вы готовы решать проблемы, связанные с драгоценными камнями, не стесняйтесь `jekyll build` or `jekyll serve`.
+
+> В некоторых случаях запуск исполняемых файлов без bundle exec работает, если не будет конфликтовать с вашим bundle.
+>
+>Однако это ненадежно и является источником значительной боли. Даже если он выглядит так, как будто он работает, он может не работать в будущем или на другой машине.
+
+```bash
+bundle exec jekyll build
+
+bundle exec jekyll serve
+```
+
+---
+
+## Структура папок
+
+```bash
+hpstr-jekyll-theme/
+├── _includes
+|    ├── browser-upgrade.html       # запрос на обновление браузера < IE8
+|    ├── footer.html                # Нижний колонтитул сайта
+|    ├── head.html                  # заголовок сайта
+|    ├── navigation.html            # Навигация по сайту
+|    └── scripts.html               # jQuery, плагины, Google Analitics, etc
+├── _layouts
+|    ├── page.html                  # макет страницы
+|    ├── page.html                  # пост-индексный макет, используемый на домашней странице
+|    └── post.html                  # макет постов
+├── _posts
+├── _sass                           # Sass partials
+├── assets
+|    ├── css                        # скомпилированные таблицы стилей
+|    ├── js
+|    |   ├── _main.js               # плагин опции
+|    |   ├── scripts.min.js         # объединить и минимизировать сценарии сайта
+|    |   ├── plugins                # plugin scripts
+|    └── └── vendor                 # jQuery and Modernizr scripts
+├── images                          # изображения для сообщений и страниц
+├── _config.yml                     # Jekyll опции
+├── about/                          # about страница
+├── posts/                          # все посты
+├── tags/                           # все посты групированные по тегам
+└── index.html                      # главная страница с пагинацией
+```
+
+---
+
+## Настройка
+
+Большинство найденных здесь переменных используются в файлах .html, найденных в `_includes` если вам нужно добавить или удалить что-либо. Хорошим местом для начала было бы добавить `title`, `description`, and `url` для вашего сайта. Ссылки являются абсолютными и имеют префикс `{{ "{{ site.url " }}}}` в различных `_includes` и `_layouts`, поэтому не забудьте правильно установить `url`[^1] to `http://localhost:4000` при локальной разработке.
+
+### Комментарии Disqus
+
+Создайте [Disqus](http://disqus.com) учетку и измените `disqus_shortname` в `_config.yml` к короткому имени Disqus, который вы только что установили. По умолчанию комментарии появляются на всех страницах и страницах, если вы назначили короткое имя. Чтобы отключить комментирование сообщения или страницы, добавьте следующее в его функцию YAML Front Matter:
+
+```yaml
+comments: false
+```
+
+### Ссылки на социальные сети
+
+Чтобы отключить ссылки на Facebook, Twitter и Google+ на странице или странице, добавьте следующее к своему первому вопросу:
+
+```yaml
+share: false
+```
+
+### Владелец / Информация об авторе
+
+Измените имя и фото на аватарку (200x200 pixels или больше), email, и ссылки на соцсети. Если вы хотите ссылаться на внешний образ на Gravatar или что-то подобное, вам нужно будет отредактировать путь в `navigation.html` так как предполагается, что он расположен в `/images`.
+
+### Google Analytics and Webmaster Tools
+
+Ваш идентификатор Google Analytics отправляется сюда вместе с метатегами для проверки в [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) и [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) верификация сайта.
+
+### Ссылки навигации
+
+Чтобы добавить дополнительные ссылки в выпадающем меню, отредактируйте `_data/navigation.yml`. Используйте следующий формат, чтобы установить URL-адрес и заголовок для как можно большего количества ссылок. *Внешние ссылки откроются в новом окне.*
+
+```yaml
+- title: Portfolio
+  url: /portfolio/
+
+- title: Made Mistakes
+  url: http://mademistakes.com  
+```
+
+---
+
+## Добавление нового контента
+
+Ваши посты хранятся в `_posts` папке и названный в соответствии с `YEAR-MONTH-DAY-title.MARKUP` [обычным форматом](https://jekyllrb.com/docs/posts/).
+
+Чтобы упростить создание сообщений и страниц, [Jekyll::Compose](https://github.com/jekyll/jekyll-compose) и [Octopress](https://github.com/octopress/octopress) это отличные плагины, которые вы можете установить для автоматизации этого процесса.
+
+---
+
+### Jekyll _includes
+
+По большей части вы можете оставить их как есть, так как данные автора / владельца вытягиваются из `_config.yml`. Тем не менее, вы, вероятно, захотите настроить `footer.html` на ваш вкус.
+
+### Время чтения
+
+По умолчанию,но  можно отключить `reading_time` в файле `_config.yml`. Слова по умолчанию в минуту устанавливаются в 200 и могут быть изменены путем обновления `words_per_minute` in `_config.yml`.
+
+### Feature Images
+
+Хорошее эмпирическое правило состоит в том, чтобы сохранить изображения объектов красивыми и широкими, чтобы вы не слишком сильно удаляли текст тела. Изображение, обрезанное вокруг 1024 x 256 пикселей, будет поддерживать размер файла с приемлемым разрешением для большинства устройств. Если вы хотите быстро реагировать на эти изображения, я бы предложил посмотреть плагин [Jekyll Picture Tag](https://github.com/scottjehl/picturefill)[^2] плагин.
+
+Два макета делают предположение, что изображения лежат в *images* папке. Чтобы добавить изображение объекта в сообщение или страницу, просто укажите имя файла	.
+
+```yaml
+image:
+  feature: feature-image-filename.jpg
+  thumb: thumbnail-image.jpg #keep it square 200x200 px is good
+```
+
+Если вы хотите применить атрибуцию к изображению элемента, используйте следующие элементы управления YAML на сообщениях или страницах. Описание изображения с описанием непосредственно под изображением объекта со ссылкой на исходный источник.
+
+```yaml
+image:
+  feature: feature-image-filename.jpg
+  credit: Michael Rose #name of the person or site you want to credit
+  creditlink: http://mademistakes.com #url to their site or licensing
+```
+
+По умолчанию `<div>` минимальная высота 400px с CSS. Все, что выше, скрыто с `overflow: hidden` объявлением. Вы можете настроить высоту изображения главной страницы и отображения на posts/pages путем изменения следующих переменных в `/_sass/_variables.scss`.
+
+```scss
+$feature-image-height: 400px; // min 150px recommended
+$front-page-feature-image-height: 400px; // min 150px recommended
+```
+
+#### Post/Page Thumbnails for OG and Twitter Cards
+
+Post and page thumbnails work the same way. These are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) meta tags found in `head.html`. If you don't assign a thumbnail the image you assigned to `site.owner.avatar` in `_config.yml` will be used.
+
+Here's an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post's YAML.
+
+![Twitter Card summary large image screenshot]({{ site.url }}/images/twitter-card-summary-large-image.jpg)
+
+### Videos
+
+Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
+
+### Twitter Cards
+
+Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to `head.html` to support this, you just need to [validate and apply your domain](https://dev.twitter.com/docs/cards) to turn it on.
+
+### Link Post Type
+
+Link blog like a champ by adding `link: http://url-you-want-linked` to a post's YAML front matter. Arrow glyph links to the post's permalink and the the `post-title` links to the source URL. Here's an [example of a link post]({{ site.url }}/sample-link-post/) if you need a visual.
+
+---
+
+## Further Customization
+
+Jekyll 2.x added support for Sass files making it much easier to modify a theme's fonts and colors. By editing values found in `_sass/variables.scss` you can fine tune the site's colors and typography.
+
+For example if you wanted a red background instead of white you'd change `$bodycolor: #fff;` to `$bodycolor: $cc0033;`.
+
+To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](http://nodejs.org/), then [install Grunt](http://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
+
+```bash
+npm install
+```
+
+From the theme's root, use `grunt` to concatenate JavaScript files and optimize `.jpg`, `.png` and `.svg` files in the `images/` folder.
+
+You can also use `grunt dev` in combination with `bundle exec jekyll serve` to watch for updates in JS files that Grunt will then automatically re-build as you write your code, which will in turn auto-generate your Jekyll site when developing locally.
+
+---
+
+## Questions?
+
+Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
+
+---
+
+## License
+
+This theme is free and open source software, distributed under the [MIT License]({{ site.url }}/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs.
+
+---
+
+[^1]: Used to generate absolute URLs in `feed.xml`, and for canonical URLs in `head.html`. Don't include a trailing `/` in your base url ie: http://mademistakes.com. When developing locally I suggest using http://localhost:4000 or whatever localhost you're using to properly load all theme stylesheets, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing to home.
+
+[^2]: If you're using GitHub Pages to host your site be aware that plugins are disabled. So you'll need to build your site locally and then manually deploy if you want to use this sweet plugin.
