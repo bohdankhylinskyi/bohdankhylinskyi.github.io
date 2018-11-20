@@ -8,7 +8,6 @@ image:
   feature: sample-image-7.jpg
 ---
 
-{% stylesheet mermaid %}
 
 Data is the new currency and it's going to be an important factor for any business looking to thrive in an increasingly competitive landscape. There are quite a few homegrown data solutions that end up creating a large cost to the business due to natural complexites of analytics problems. That is why you should take a serious look at a unified data framework.
 

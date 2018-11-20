@@ -8,7 +8,6 @@ image:
   feature: sample-image-7.jpg
 ---
 
-{% stylesheet mermaid %}
 
 # Continuous integration and delivery
 
@@ -19,18 +18,6 @@ image:
 # Repeatable and consistent environments
 
 <!-- # Repeatable and consistent environments: from development to production --> 
-
-{% mermaid %}
-        graph LR
-        subgraph one
-        A[Virtual Machine] --> B[EC2 Development]
-        end
-        subgraph one
-        B --> C[EC2 Testing]
-        C --> D[EC2 Staging]
-        D --> E[EC2 Production]
-        end
-{% endmermaid %}
 
 * Talk about AWS here
 
