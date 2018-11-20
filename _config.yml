@@ -34,10 +34,8 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-#gems: [jekyll-mermaid]
 mermaid:
-  src: '/js/mermaid.js'
-  src_config: '/js/mermaid_config.js'
+  src: "/js/mermaid.js"
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Kiev
@@ -50,9 +48,13 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-admin
+  - jekyll-mermaid
 sass:
   sass_dir: _sass
   style: compressed
+
+mermaid:
+    src: '/js/mermaid.js'
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
