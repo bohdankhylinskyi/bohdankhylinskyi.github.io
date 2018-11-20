@@ -16,7 +16,6 @@ A data pipeline is method for shipping data efficiently to various services thro
 
 The idea is that you have a set of producer and consumer applications, where the producer will publish data to your pipeline and the consumer will subscribe from your pipeline. That means that you can integrate your pipeline with multiple systems by creating multiple consumer applications. 
 
-{% stylesheet mermaid %}
 
 {% mermaid %}
         graph LR

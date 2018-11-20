@@ -6,7 +6,7 @@ categories: Python
 image:
   feature: sample-image-7.jpg
 ---
-{% stylesheet mermaid %}
+
 
 Building a unified data pipeline means that you will likely need to choose between two of the mainstream messaging systems:
 
