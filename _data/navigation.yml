@@ -1,7 +1,14 @@
-# Menu navigation links
+# Site navigation links
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: About
+  url: /about/
 
-- title: External Link
-  url: http://mademistakes.com
+- title: Services
+  url: /services/
+
+- title: Spark
+  url: /spark/
+
+- title: Blog
+  url: /blog/
+

@@ -1,27 +1,55 @@
-# HPSTR Jekyll Theme
+# Jekyll-mermaid-blog
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing [my first two themes](https://mademistakes.com/work/jekyll-themes/), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory.
+A [Jekyll](http://jekyllrb.com/) blog integrated with the [mermaid](https://github.com/knsv/mermaid) library for diagrams and flowcharts in your posts and pages.
 
-**Compatible with Jekyll 3.0 and up.**
+## Installation
 
-## What HPSTR brings to the table:
+1. Install [Jekyll](http://jekyllrb.com/)
+2. Download repository
 
-* Modern and minimal design.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet animated menu with support for drop-downs.
-* Optional [Disqus](http://disqus.com) comments and social sharing links.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* [Syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) stylesheet to make your code examples look snazzy
-* [Available in Spanish](https://github.com/cruznick/hpstr-jekyll-theme/tree/es). Thanks [@cruznick](https://github.com/cruznick)!
+Please see the [Jekyll documentation](http://jekyllrb.com/docs/plugins/#installing-a-plugin) for more installation options.
 
-![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
+## Config
 
----
+The [mermaid](https://github.com/knsv/mermaid) javascript files are sourced through `_config.yml`.
 
-## Getting Started
+```ruby
+mermaid:
+  src: '/js/mermaid.js'
+  src_config: '/js/mermaid_config.js'
+```
 
-HPSTR takes advantage of SCSS and data files to make customizing easier. This theme requires Jekyll 3.x and will not work with older versions properly.
+Publish the jekyll blog is done through the `RakeFile` so you will need to update the `GITHUB_REPONAME`.
 
-To learn how to install and use this theme check out the [Setup Guide](https://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/) for more information.
+## Usage
+
+Running the jekyll site locally by executing jekyll serve.
+
+```shell
+jekyll serve
+```
+
+The website can be published by executing a rake command.
+
+```shell
+rake publish
+````
+
+For working with mermaid diagrams, simply include the [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid) block helper in any of your templates.
+
+```liquid
+{% mermaid %}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
+```
+
+Please see the [mermaid documentation](https://github.com/knsv/mermaid/wiki) for more examples.
+
+
+## Demo
+
+For a working example, check out the [blog post](http://quickinsights.io/apache/spark/apache-spark-redshift) as well the [source code](https://github.com/trienism/jekyll-mermaid-blog).
