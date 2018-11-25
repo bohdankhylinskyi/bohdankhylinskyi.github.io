@@ -5,31 +5,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Последние посты &#8211; My Sirius Blog</title>
-<meta name="description" content="Describtion ..">
-<meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
+<title>Настройка темы &#8211; My Sirius Blog</title>
+<meta name="description" content="Инструкция о том как проинсталировать и настроить совеременнуб Jekyll тему HPSTR.">
+<meta name="keywords" content="Jekyll">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/abstract-1.jpg">
+<meta name="twitter:image" content="http://localhost:4000/images/abstract-11.jpg">
 
-<meta name="twitter:title" content="Последние посты">
-<meta name="twitter:description" content="Describtion ..">
+<meta name="twitter:title" content="Настройка темы">
+<meta name="twitter:description" content="Инструкция о том как проинсталировать и настроить совеременнуб Jekyll тему HPSTR.">
 <meta name="twitter:creator" content="@2hotab2">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Последние посты">
-<meta property="og:description" content="Describtion ..">
-<meta property="og:url" content="http://localhost:4000/page9/">
+<meta property="og:title" content="Настройка темы">
+<meta property="og:description" content="Инструкция о том как проинсталировать и настроить совеременнуб Jekyll тему HPSTR.">
+<meta property="og:url" content="http://localhost:4000/aaa/">
 <meta property="og:site_name" content="My Sirius Blog">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/page9/">
+<link rel="canonical" href="http://localhost:4000/aaa/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="My Sirius Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -65,7 +65,7 @@
 
 </head>
 
-<body id="post-index" class="feature">
+<body id="page" class="feature">
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
@@ -119,291 +119,31 @@
 </nav><!-- /.dl-menuwrapper -->
 
 
+
 <div class="entry-header">
   
-  
-    <div class="entry-image">
-      <img src="http://localhost:4000/images/abstract-1.jpg" alt="Последние посты">
-    </div><!-- /.entry-image -->
-  
-  <div class="header-title">
-    <div class="header-title-wrap">
-      <h1>My Sirius Blog</h1>
-      <h2>Последние посты</h2>
-    </div><!-- /.header-title-wrap -->
-  </div><!-- /.header-title -->
+  <div class="entry-image">
+    <img src="http://localhost:4000/images/abstract-11.jpg" alt="Настройка темы">
+  </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
 
+
 <div id="main" role="main">
-  
-<article class="hentry">
-  <header>
-    
-      <div class="entry-image-index">
-        <a href="http://localhost:4000/Lesson_1_1/" title="101.1 Определение и настройка аппаратной части"><img src="http://localhost:4000/images/matrix.jpg" alt="101.1 Определение и настройка аппаратной части"></a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2018-01-01T00:00:00+02:00"><a href="http://localhost:4000/Lesson_1_1/">January 01, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Sergey Khatsiola">Sergey Khatsiola</a></span></span>
-      
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        <h1 class="entry-title">Настройка темы</h1>
         
-Reading time ~2 minutes
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/Lesson_1_1/" rel="bookmark" title="101.1 Определение и настройка аппаратной части" itemprop="url">101.1 Определение и настройка аппаратной части</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p><strong>Изучаем:</strong>
-•	получение информации об оборудовании;
-•	управление устройствами;
-•	понятия sysfs, udev, dbus, udevadm.</p>
-
-<p><strong>Термины и утилиты:</strong>
-•	/sys/
-•	/proc/
-•	/dev/
-•	modprobe
-•	lsmod
-•	lspci
-•	lsusb
-•	udevadm</p>
-
-<p>Аппаратная часть современных компьютерных устройств — это отдельный полноценный курс. В данном уроке поверхностно рассматриваются базовые манипуляции с комплектующими ПК из ОС Linux.</p>
-
-<p>При работе с устройствами Linux можно столкнуться со следующими понятиями:
-•	<strong>HAL</strong> – демон, представляющий слой абстрагирования от конкретной АЧ, благодаря которому ОС может обращаться к устройствам через их абстрактные представления (конкретную инструкцию устройству будет передавать драйвер), на данный момент является устаревшим;
-•	<strong>Dbus</strong> - шина, через которую процессы обмениваются информацией, в частности  приложения получают через нее информацию об оборудовании из ядра;
-•	<strong>udev</strong> - менеджер устройств, пришедший на смену HAL.</p>
-
-<p><em>Преимущества udev:</em></p>
-<ul>
-  <li>работает на уровне пользователя (больше свободы действий);</li>
-  <li>событийно-управляемый (а не опрашивает ядро по расписанию как HAL);</li>
-  <li>удобные файлы конфигурации (а не xml как у HAL);</li>
-  <li>содержит в системе только файлы активных устройств (а не всех устройств как HAL);</li>
-  <li>содержит имена устройств неизменными (в HAL имя зависит от порядка подключения).</li>
-</ul>
-
-<p>В директории <strong>/dev</strong> находится информация об интерфейсах работы с драйверами ядра, например:
-<strong>/dev/sda</strong>	 - первый жесткий диск;
-<strong>/dev/sr0</strong>	 - CD-ROM;
-<em>Примечание: в каталоге /dev, как правило, отсутствует информация о сетевых картах и видеокартах, так как работа с ними немного сложнее чем простые операции чтения-записи.</em>
-В /dev лежат специальные файлы устройств, которые можно считать указателями на драйверы. При помощи этих файлов происходит обращение к устройствам.</p>
-
-<p>База данных подключенных устройств хранится в директории <strong>/sys</strong>, где они расположены по каталогам и именуются автоматически согласно идентификаторам, например:
-<strong>/sys/block</strong> - перечень блочных устройств;
-<strong>/sys/bus</strong>	 - перечень шин;
-Если /dev содержит файлы устройств для работы с приложениями, то /sys содержит информацию об этих устройствах.
-<em><strong>Метафора: /sys это упаковка, а /dev – содержимое.</strong></em></p>
-
-<p>Информация о состоянии ОС и всех запущенных процессах находится в директории <strong>/proc</strong>, например:
-<strong>/proc/cpuinfo</strong> - информация о процессоре;
-<strong>/proc/mounts</strong> - подключенные файловые системы;
-Самая интересная директория - <strong>/proc/sys</strong>, так как она не только содержит информацию о системе, но и позволяет ее редактировать «на лету».</p>
-
-<hr />
-
-<p>Для работы с модулями ядра, например, с драйверами устройств, предназначены следующие команды:
-•	<strong>lsmod</strong> – информация о модулях ядра;
-•	<strong>lspci</strong> – информация об устройствах PCI;
-•	<strong>lspcmciа</strong> – информация об устройствах PCMCIA;
-•	<strong>lsusb</strong> – информация о шине USB;
-•	<strong>rmmod</strong>	– удалить модуль;
-•	<strong>insmod</strong>	– установить модуль;
-•	<strong>modprobe</strong> – деликатно выполнить действия с модулем.</p>
-
-<p>Отдельного внимания заслуживает инструменты работы с <strong>udev – udevadm</strong>, который может запускаться со следующими опциями:
-•	<strong>info</strong>	 	– получение информации из БД;
-•	<strong>trigger</strong>		– запросить события для устройства;
-•	<strong>settle</strong>		– дождаться завершения обработки;
-•	<strong>control</strong> 	– управление демоном;
-•	<strong>monitor</strong> 	– следить за событиями;
-•	<strong>test</strong> 		– симулировать запуск события.
-<em>Примечание: мы не рассматриваем на данном этапе такие продвинутые действия, как создания собственных правил обработки событий оборудования, тем не менее вы сам можете их изучить.</em></p>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    
-      <div class="entry-image-index">
-        <a href="http://localhost:4000/sample-post/" title="Пост пример"><img src="http://localhost:4000/images/abstract-3.jpg" alt="Пост пример"></a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2017-11-20T00:00:00+02:00"><a href="http://localhost:4000/sample-post/">November 20, 2017</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Sergey Khatsiola">Sergey Khatsiola</a></span></span>
-      
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        
-Reading time ~1 minute
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/sample-post/" rel="bookmark" title="Пост пример" itemprop="url">Пост пример</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
-
-<h1 id="heading-1">Heading 1</h1>
-
-<h2 id="heading-2">Heading 2</h2>
-
-<h3 id="heading-3">Heading 3</h3>
-
-<h4 id="heading-4">Heading 4</h4>
-
-<h5 id="heading-5">Heading 5</h5>
-
-<h6 id="heading-6">Heading 6</h6>
-
-<h3 id="body-text">Body text</h3>
-
-<p>Lorem ipsum dolor sit amet, test link adipiscing elit. <strong>This is strong</strong>. Nullam dignissim convallis est. Quisque aliquam.</p>
-
-<p class="image-right"><img src="http://localhost:4000/images/3953273590_704e3899d5_m.jpg" alt="Smithsonian Image" /></p>
-
-<p><em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>(That’s a citation)</cite>. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
-<p>HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</abbr></abbr></p>
-
-<h3 id="blockquotes">Blockquotes</h3>
-
-<blockquote>
-  <p>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.</p>
-</blockquote>
-
-<h2 id="list-types">List Types</h2>
-
-<h3 id="ordered-lists">Ordered Lists</h3>
-
-<ol>
-  <li>Item one
-    <ol>
-      <li>sub item one</li>
-      <li>sub item two</li>
-      <li>sub item three</li>
-    </ol>
-  </li>
-  <li>Item two</li>
-</ol>
-
-<h3 id="unordered-lists">Unordered Lists</h3>
-
-<ul>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-</ul>
-
-<h2 id="tables">Tables</h2>
-
-<table rules="groups">
-  <thead>
-    <tr>
-      <th style="text-align: left">Header1</th>
-      <th style="text-align: center">Header2</th>
-      <th style="text-align: right">Header3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">cell5</td>
-      <td style="text-align: right">cell6</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">cell5</td>
-      <td style="text-align: right">cell6</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td style="text-align: left">Foot1</td>
-      <td style="text-align: center">Foot2</td>
-      <td style="text-align: right">Foot3</td>
-    </tr>
-  </tfoot>
-</table>
-
-<h2 id="code-snippets">Code Snippets</h2>
-
-<p>Syntax highlighting via Rouge</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#container</span> <span class="p">{</span>
-  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
-  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
-  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Non Pygments code example</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="awesome"&gt;
-    &lt;p&gt;This is great isn't it?&lt;/p&gt;
-&lt;/div&gt;
-</code></pre></div></div>
-
-<h2 id="buttons">Buttons</h2>
-
-<p>Make any link standout more when applying the <code class="highlighter-rouge">.btn</code> class.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success Button<span class="nt">&lt;/a&gt;</span>
-</code></pre></div></div>
-
-<div><a href="#" class="btn">Primary Button</a></div>
-<div><a href="#" class="btn btn-success">Success Button</a></div>
-<div><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div><a href="#" class="btn btn-info">Info Button</a></div>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    
-      <div class="entry-image-index">
-        <a href="http://localhost:4000/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%82%D0%B5%D0%BC%D1%8B-HPSTR/" title="Настройка темы"><img src="http://localhost:4000/images/abstract-11.jpg" alt="Настройка темы"></a>
-      </div><!-- /.entry-image -->
-    
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2011-11-11T00:00:00+02:00"><a href="http://localhost:4000/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%82%D0%B5%D0%BC%D1%8B-HPSTR/">November 11, 2011</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Sergey Khatsiola">Sergey Khatsiola</a></span></span>
-      
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
 Reading time ~7 minutes
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://localhost:4000/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%82%D0%B5%D0%BC%D1%8B-HPSTR/" rel="bookmark" title="Настройка темы" itemprop="url">Настройка темы</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>Общие замечания и предложения по настройке HPSTR.</p>
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>Общие замечания и предложения по настройке HPSTR.</p>
 
 <p>HPSTR теперь работает под Jekyll 3.0. Обязательно запустите <code class="highlighter-rouge">bundle update</code>, чтобы обновить все зависимости gem.</p>
 
@@ -627,70 +367,20 @@ bundle <span class="nb">exec </span>jekyll serve
   </ol>
 </div>
 
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-
-
-<div class="pagination">
-  <ul class="inline-list">
-    
-    
-      
-        <li><a href="http://localhost:4000/page8/" class="btn">Previous</a></li>
-      
-    
-
-    
-    
-      <li><a href="http://localhost:4000">1</a></li>
-    
-
-    
-    
-      
-      
-      <li>…</li>
-    
-
-    
-    
-    
-
-    
-      
-        
-        
-        
-        <li><a href="http://localhost:4000/page7/">7</a></li>
-      
-    
-      
-        
-        
-        
-        <li><a href="http://localhost:4000/page8/">8</a></li>
-      
-    
-      
-        <li><strong class="current-page">9</strong></li>
-      
-    
-
-    
-    
-
-    
-      <li><a href="http://localhost:4000/page10/">10</a></li>
-    
-
-    
-    
-      <li><a href="http://localhost:4000/page10/" class="btn">Next</a></li>
-    
+      <footer class="entry-meta">
+        <span>Updated on <span class="entry-date date published updated"><time datetime="2018-10-17 22:14:43 +0300">October 17, 2018</time></span></span>
+        <span class="author vcard"><span class="fn">Sergey Khatsiola</span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/aaa/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/aaa/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/aaa/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
-</div>
-
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+  </article>
 </div><!-- /#main -->
 
 <div class="footer-wrapper">
