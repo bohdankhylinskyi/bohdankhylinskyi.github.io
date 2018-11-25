@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-25T23:48:24+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Sirius Blog</title><subtitle>Блог Сергея Хацёла</subtitle><entry><title type="html">Устанавливаем PostgreSQL 11 из sources</title><link href="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/" rel="alternate" type="text/html" title="Устанавливаем PostgreSQL 11 из sources" /><published>2018-11-25T00:00:00+02:00</published><updated>2018-11-25T00:00:00+02:00</updated><id>http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20PostgreSql%20%D0%B8%D0%B7%20sources</id><content type="html" xml:base="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/">&lt;p&gt;Загрузка sources из &lt;a href=&quot;https://www.postgresql.org/download/&quot;&gt;PostgreSQL.org&lt;/a&gt; и распаковываем в папку ~/install&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-26T00:38:13+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Sirius Blog</title><subtitle>Блог Сергея Хацёла</subtitle><entry><title type="html">Анализ скорости загрузки сайта PageSpeed</title><link href="http://localhost:4000/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81%D0%B0%D0%B9%D1%82%D0%B0/" rel="alternate" type="text/html" title="Анализ скорости загрузки сайта PageSpeed" /><published>2018-11-26T00:00:00+02:00</published><updated>2018-11-26T00:00:00+02:00</updated><id>http://localhost:4000/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B8%20%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0</id><content type="html" xml:base="http://localhost:4000/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81%D0%B0%D0%B9%D1%82%D0%B0/">&lt;p&gt;PageSpeed Insights анализирует содержание веб-страницы и предлагает решения, которые позволят ускорить ее загрузку.
+Пример анализа &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fblog.fzona.com.ua&quot;&gt;blog.fzona.com.ua&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;ссылки&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;developers&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.google.com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;speed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pagespeed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;insights&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="SEO" /><summary type="html">PageSpeed Insights анализирует содержание веб-страницы и предлагает решения, которые позволят ускорить ее загрузку. Пример анализа blog.fzona.com.ua</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/matrix.jpg" /></entry><entry><title type="html">Устанавливаем PostgreSQL 11 из sources</title><link href="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/" rel="alternate" type="text/html" title="Устанавливаем PostgreSQL 11 из sources" /><published>2018-11-25T00:00:00+02:00</published><updated>2018-11-25T00:00:00+02:00</updated><id>http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20PostgreSql%20%D0%B8%D0%B7%20sources</id><content type="html" xml:base="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/">&lt;p&gt;Загрузка sources из &lt;a href=&quot;https://www.postgresql.org/download/&quot;&gt;PostgreSQL.org&lt;/a&gt; и распаковываем в папку ~/install&lt;/p&gt;
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ftp&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.postgresql.org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;v11&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgresql-11&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.1.tar.gz&lt;/span&gt;
@@ -703,73 +708,4 @@
 
 &lt;p&gt;Для скачивания пакетов можно воспользоваться утилитой &lt;strong&gt;yumdownloader&lt;/strong&gt; , например:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;yumdownloader&lt;/strong&gt;** resolve &lt;strong&gt;**openssh&lt;/strong&gt;**        ** &lt;em&gt;(скачать пакет&lt;/em&gt; &lt;em&gt;openssh&lt;/em&gt; &lt;em&gt;и все его зависимости).&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="LPIC1-101" /><summary type="html">Студент должен уметь управлять ПО в RedHat системах.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/matrix.jpg" /></entry><entry><title type="html">103.1 Работа в командной строке</title><link href="http://localhost:4000/Lesson_3_1/" rel="alternate" type="text/html" title="103.1 Работа в командной строке" /><published>2018-01-01T00:00:00+02:00</published><updated>2018-01-01T00:00:00+02:00</updated><id>http://localhost:4000/Lesson_3_1</id><content type="html" xml:base="http://localhost:4000/Lesson_3_1/">&lt;p&gt;Студент должен уметь работать с командными оболочками и командами в командной строке&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Изучаем&lt;/strong&gt; :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;работу с оболочками и командами для выполнения основных задач;&lt;/li&gt;
-  &lt;li&gt;использование и изменение среды оболочки, в том числе переменных среды;&lt;/li&gt;
-  &lt;li&gt;работу с историей выполненных команд;&lt;/li&gt;
-  &lt;li&gt;работу с командами исходя из текущего месторасположения.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Термины и утилиты:&lt;/strong&gt;**        **&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;bash&lt;/li&gt;
-  &lt;li&gt;echo&lt;/li&gt;
-  &lt;li&gt;env&lt;/li&gt;
-  &lt;li&gt;export&lt;/li&gt;
-  &lt;li&gt;pwd&lt;/li&gt;
-  &lt;li&gt;set&lt;/li&gt;
-  &lt;li&gt;unset&lt;/li&gt;
-  &lt;li&gt;man&lt;/li&gt;
-  &lt;li&gt;uname&lt;/li&gt;
-  &lt;li&gt;history&lt;/li&gt;
-  &lt;li&gt;.bash_history&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Работа администратора с Linux заключается прежде всего в оперировании в командной строке. Командная строка, или консоль — это отдельная программируемая среда со своими настройками, возможностями и инструментами. Существует множество различных оболочек, в данном уроке рассматривается bash, используемая в большинстве современных ОС.&lt;/p&gt;
-
-&lt;p&gt;Увидеть название оболочки, используемой пользователем по умолчанию, можно в конце каждой строки файла &lt;strong&gt;/&lt;/strong&gt;** etc &lt;strong&gt;**/&lt;/strong&gt;** passwd &lt;strong&gt;. Глобальные настройки командной строки находятся в файле&lt;/strong&gt; / &lt;strong&gt;**etc&lt;/strong&gt;** / &lt;strong&gt;**profile&lt;/strong&gt; , а настройки для каждого пользователя в файлах его домашней директории.&lt;/p&gt;
-
-&lt;p&gt;При этом существует несколько вариантов расположения настроек, в зависимости от семейства ОС. В общем виде поиск настроек осуществляется в следующем порядке:   &lt;strong&gt;~/.bash_profile, ~/.bash_login&lt;/strong&gt; , и &lt;strong&gt;~/.profile&lt;/strong&gt; (настройки берутся из первого обнаруженного файла).&lt;/p&gt;
-
-&lt;p&gt;При работе в консоли используются следующие распространенные команды (их больше, но в данной теме LPI почему-то заостряет внимание на этих):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;cat&lt;/strong&gt;          –  вывод содержимого файла в консоль;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;cd&lt;/strong&gt;         – переход в каталог;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ls&lt;/strong&gt;         – вывод содержимого каталога;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;echo&lt;/strong&gt;         – вывод текста в консоль;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;touch&lt;/strong&gt;         – обновление времени редактирования файла или создание нового пустого файла;&lt;/li&gt;
-  &lt;li&gt;**uname       ** – вывод имени ОС;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Консоль, как отдельная рабочая среда содержит свои переменные: переменные среды (глобальные переменные, использующиеся в ОС) и обычные переменные (работают в пределах запущенного сеанса консоли). Для просмотра переменных доступны команды:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;env&lt;/strong&gt; – вывод переменных среды;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;export&lt;/strong&gt; – превращение переменной в переменную среды;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;unset&lt;/strong&gt; – отключение переменной;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Для создания переменной используется простой синтаксис &lt;strong&gt;имя_переменной=значение_переменной&lt;/strong&gt;. Для обращения к переменной указывается знак &lt;strong&gt;$&lt;/strong&gt; , например:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X&lt;/strong&gt;** =12               ** &lt;em&gt;(задать переменной&lt;/em&gt; &lt;em&gt;X&lt;/em&gt; &lt;em&gt;значение 12);&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;echo&lt;/strong&gt;   &lt;strong&gt;$&lt;/strong&gt;** X &lt;em&gt;**&lt;/em&gt;               ** &lt;em&gt;(вывести значение переменной&lt;/em&gt; &lt;em&gt;X__);&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Для выполнения команды в текущем каталоге (его можно узнать командой &lt;strong&gt;pwd&lt;/strong&gt; ), нужно указывать полный путь к команде (&lt;em&gt;например, / &lt;strong&gt;home&lt;/strong&gt; / &lt;strong&gt;semaev&lt;/strong&gt; /__script&lt;/em&gt;), если текущий каталог не перечислен в значениях переменной среды &lt;strong&gt;PATH&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Для получения справочной информации доступны команды:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;man&lt;/strong&gt;         – справка по команде;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;file&lt;/strong&gt;         – справка по файлу;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;whatis&lt;/strong&gt; – справка по названию;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;history&lt;/strong&gt; – вывод истории команд (список хранится в .bash_history);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Отдельно следует упомянуть команду &lt;strong&gt;exec&lt;/strong&gt; , позволяющую выполнять команду за пределами текущей оболочки, сбрасывая права суперпользователя.&lt;/p&gt;</content><author><name></name></author><category term="LPIC1-101" /><summary type="html">Студент должен уметь работать с командными оболочками и командами в командной строке</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/matrix.jpg" /></entry></feed>
+&lt;p&gt;&lt;strong&gt;yumdownloader&lt;/strong&gt;** resolve &lt;strong&gt;**openssh&lt;/strong&gt;**        ** &lt;em&gt;(скачать пакет&lt;/em&gt; &lt;em&gt;openssh&lt;/em&gt; &lt;em&gt;и все его зависимости).&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="LPIC1-101" /><summary type="html">Студент должен уметь управлять ПО в RedHat системах.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/matrix.jpg" /></entry></feed>
