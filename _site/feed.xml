@@ -1,129 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-25T22:17:07+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Блог</title><subtitle>Блог Сергея Хацёла</subtitle><entry><title type="html">Sample Post</title><link href="http://localhost:4000/sample-post/" rel="alternate" type="text/html" title="Sample Post" /><published>2018-11-20T00:00:00+02:00</published><updated>2018-11-20T00:00:00+02:00</updated><id>http://localhost:4000/sample-post</id><content type="html" xml:base="http://localhost:4000/sample-post/">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-25T23:43:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Sirius Blog</title><subtitle>Блог Сергея Хацёла</subtitle><entry><title type="html">Устанавливаем PostgreSQL 11 из sources</title><link href="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/" rel="alternate" type="text/html" title="Устанавливаем PostgreSQL 11 из sources" /><published>2018-11-25T00:00:00+02:00</published><updated>2018-11-25T00:00:00+02:00</updated><id>http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20PostgreSql%20%D0%B8%D0%B7%20sources</id><content type="html" xml:base="http://localhost:4000/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-PostgreSql-%D0%B8%D0%B7-sources/">&lt;p&gt;Загрузка sources из &lt;a href=&quot;https://www.postgresql.org/download/&quot;&gt;PostgreSQL.org&lt;/a&gt; и распаковываем в папку ~/install&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;ftp&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.postgresql.org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;v11&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgresql-11&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.1.tar.gz&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;xzf&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgresql-11&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.1.tar.gz&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;p&gt;Приступаем к установке, в случае ошибки придется установить недостающие библиотеки и инструменты.&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;./&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;configure&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;world&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;По умолчанию система развернется в папке &lt;em&gt;/usr/local/pgsql&lt;/em&gt; проверьте наличие файлов&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;Для работы PostgreSQL сервера требуется создать пользователя &lt;em&gt;postgres&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;useradd&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;p&gt;Создаем папку для данных $PGDATA&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Проводим инициализацию базы под пользователем postgres&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;su&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;initdb&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;p&gt;Запускаем демон PostgreSQL&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;logfile&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+&lt;p&gt;Создаем тестовую базу &lt;em&gt;test&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;createdb&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;test&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;psql&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;test&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;body-text&quot;&gt;Body text&lt;/h3&gt;
+&lt;p&gt;Создаем скрипт автоматического запуска сервиса PostgreSQL&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;touch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;systemd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgresql&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.service&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;Инаполнение&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;файла&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Unit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;PostgreSQL&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;database&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;server&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;After&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.target&lt;/span&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;forking&lt;/span&gt;
 
-&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;span class=&quot;nt&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;Group&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt;
 
-&lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Maximum&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;seconds&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pg_ctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;wait&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;Note&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;that&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;PGSTARTTIMEOUT&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;should&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;TimeoutSec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;Environment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;PGSTARTTIMEOUT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;270&lt;/span&gt;
 
-&lt;p&gt;HTML and &lt;abbr title=&quot;cascading stylesheets&quot;&gt;CSS&lt;abbr&gt; are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/abbr&gt;&lt;/abbr&gt;&lt;/p&gt;
+&lt;span class=&quot;nt&quot;&gt;Environment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;PGDATA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data&lt;/span&gt;
 
-&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;span class=&quot;nt&quot;&gt;ExecStart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pg_ctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;PGDATA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;PGSTARTTIMEOUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;ExecStop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pg_ctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;stop&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;PGDATA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;fast&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;ExecReload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pgsql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pg_ctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;reload&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;PGDATA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;
 
-&lt;h2 id=&quot;list-types&quot;&gt;List Types&lt;/h2&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Give&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;reasonable&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;amount&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;shut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;down&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Ideally&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;timeout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;starting&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;PostgreSQL&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;should&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;handled&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;more&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;nicely&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pg_ctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ExecStart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;so&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;keep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;its&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;timeout&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;smaller&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;TimeoutSec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;300&lt;/span&gt;
 
-&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Install&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;WantedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;multi-user&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.target&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Item one
-    &lt;ol&gt;
-      &lt;li&gt;sub item one&lt;/li&gt;
-      &lt;li&gt;sub item two&lt;/li&gt;
-      &lt;li&gt;sub item three&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Останавливаем демон PostgreSQL и перезапустим конфигурацию демона systemd:&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;su&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data/ stop&quot;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;daemon-reload&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgresql&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;postgresql&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Основной файл настроек Postgresql это postgresql.conf, в директории с данными /usr/local/pgsql/data/&lt;/p&gt;
 
-&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pg_hba&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.conf&lt;/span&gt;
 
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;TYPE&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;DATABASE&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;USER&lt;/span&gt;            &lt;span class=&quot;nt&quot;&gt;ADDRESS&lt;/span&gt;                 &lt;span class=&quot;nt&quot;&gt;METHOD&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;local&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Unix&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;domain&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;socket&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;connections&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;only&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;                                     &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;IPv4&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;connections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;host&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nt&quot;&gt;127&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.0.0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;32&lt;/span&gt;            &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;IPv6&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;connections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;host&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nd&quot;&gt;::1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;128&lt;/span&gt;                 &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Allow&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;replication&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;connections&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;the&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;replication&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;privilege&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;replication&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;                                     &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;host&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;replication&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nt&quot;&gt;127&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.0.0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;32&lt;/span&gt;            &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;host&lt;/span&gt;    &lt;span class=&quot;nt&quot;&gt;replication&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt;             &lt;span class=&quot;nd&quot;&gt;::1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;128&lt;/span&gt;                 &lt;span class=&quot;nt&quot;&gt;trust&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Рассмотрим возможные значения столбцов:&lt;/p&gt;
+
+&lt;p&gt;Тип подключения:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Item one&lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
+  &lt;li&gt;local - подключение через доменные сокеты Unix;&lt;/li&gt;
+  &lt;li&gt;host - подключение по TCP/IP;&lt;/li&gt;
+  &lt;li&gt;hostssl - подключение по TCP/IP с применением шифрования SSL;&lt;/li&gt;
+  &lt;li&gt;hostnossl - противоположен hostssl, подключение по TCP/IP без шифрования SSL.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;База данных - определяет к какой базе осуществляется подключение:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Имя конкретной баззы данных;&lt;/li&gt;
+  &lt;li&gt;all - все базы данных;&lt;/li&gt;
+  &lt;li&gt;sameuser - определяет, что данная запись соответствует только, если имя запрашиваемой базы данных совпадает с именем запрашиваемого пользователя.&lt;/li&gt;
+  &lt;li&gt;samerole - определяет, что запрашиваемый пользователь должен быть членом роли с таким же именем, как и у запрашиваемой базы данных.&lt;/li&gt;
+  &lt;li&gt;Пользователь - учетная запись под которой происходит подключение к базе:&lt;/li&gt;
+  &lt;li&gt;Конкретное имя пользователя (несколько пользователей через запятую);&lt;/li&gt;
+  &lt;li&gt;all - любой пользователь;&lt;/li&gt;
+  &lt;li&gt;знак + перед именем пользователя - подключаемый пользователь имеет отношение к указанной роли;&lt;/li&gt;
+  &lt;li&gt;знак @ далее идет имя файла содержащего список пользователей.&lt;/li&gt;
+  &lt;li&gt;Адрес - адрес клиента, с которого происходит подключение:&lt;/li&gt;
+  &lt;li&gt;ip-адрес/маска (172.20.1.0/24, 172.20.1.1/32);&lt;/li&gt;
+  &lt;li&gt;all - любой хост;&lt;/li&gt;
+  &lt;li&gt;samehost - любой адрес данного сервера;&lt;/li&gt;
+  &lt;li&gt;samenet - любой адрес любой сети, к которой сервер подключен напрямую.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;table rules=&quot;groups&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
-
-&lt;p&gt;Syntax highlighting via Rouge&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Non Pygments code example&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;awesome&quot;&amp;gt;
-    &amp;lt;p&amp;gt;This is great isn't it?&amp;lt;/p&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
-
-&lt;p&gt;Make any link standout more when applying the &lt;code class=&quot;highlighter-rouge&quot;&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-success&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Primary Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-warning&quot;&gt;Warning Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-danger&quot;&gt;Danger Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-info&quot;&gt;Info Button&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="markdown sample" /><summary type="html">Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/abstract-3.jpg" /></entry><entry><title type="html">101.1 Определение и настройка аппаратной части</title><link href="http://localhost:4000/Lesson_1_1/" rel="alternate" type="text/html" title="101.1 Определение и настройка аппаратной части" /><published>2018-01-01T00:00:00+02:00</published><updated>2018-01-01T00:00:00+02:00</updated><id>http://localhost:4000/Lesson_1_1</id><content type="html" xml:base="http://localhost:4000/Lesson_1_1/">&lt;p&gt;&lt;strong&gt;Изучаем:&lt;/strong&gt;
+&lt;p&gt;Метод аутентификации:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;trust - разрешает безусловное подключение;&lt;/li&gt;
+  &lt;li&gt;reject - отклоняет подключение;&lt;/li&gt;
+  &lt;li&gt;md5 - требует от клиента предоставить пароль;&lt;/li&gt;
+  &lt;li&gt;password - требуется для аутентификации клиентом с вводом незашифрованного пароля;&lt;/li&gt;
+  &lt;li&gt;ident - получает имя пользователя операционной системы клиента, связываясь с сервером Ident, и проверяет, соответствует ли оно имени пользователя базы данных. Аутентификация ident может использоваться только для подключений по TCP/IP;&lt;/li&gt;
+  &lt;li&gt;peer - получает имя пользователя операционной системы клиента из операционной системы и проверяет, соответствует ли оно имени пользователя запрашиваемой базы данных. Доступно только для локальных подключений;&lt;/li&gt;
+  &lt;li&gt;ldap - аутентификация с помощью сервера LDAP;&lt;/li&gt;
+  &lt;li&gt;radius - аутентификация с помощью сервера Radius;&lt;/li&gt;
+  &lt;li&gt;cert - аутентификация с помощью сертификата;&lt;/li&gt;
+  &lt;li&gt;pam - аутентификация с помощью службы подключаемых модулей аутентификации (PAM).&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="PostgreSQL" /><category term="Install" /><summary type="html">Загрузка sources из PostgreSQL.org и распаковываем в папку ~/install mkdir install cd install wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz tar xzf postgresql-11.1.tar.gz</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/matrix.jpg" /></entry><entry><title type="html">101.1 Определение и настройка аппаратной части</title><link href="http://localhost:4000/Lesson_1_1/" rel="alternate" type="text/html" title="101.1 Определение и настройка аппаратной части" /><published>2018-01-01T00:00:00+02:00</published><updated>2018-01-01T00:00:00+02:00</updated><id>http://localhost:4000/Lesson_1_1</id><content type="html" xml:base="http://localhost:4000/Lesson_1_1/">&lt;p&gt;&lt;strong&gt;Изучаем:&lt;/strong&gt;
 •	получение информации об оборудовании;
 •	управление устройствами;
 •	понятия sysfs, udev, dbus, udevadm.&lt;/p&gt;
