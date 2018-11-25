@@ -15,6 +15,7 @@ mkdir install
 cd install
 wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz
 tar xzf postgresql-11.1.tar.gz
+cd postgresql-11.1
 ```
 
 Приступаем к установке, в случае ошибки придется установить недостающие библиотеки и инструменты.
